@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <meta name="description" content="Explore programs, people and campus life at JS Institute of Design.">
+  <title>JS Institute of Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#/" aria-label="JSID home"><span class="brand-mark">JS<span>·</span>ID</span><span class="brand-caption">Institute<br>of Design</span></a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <button class="nav-trigger" type="button" data-menu="academics" aria-expanded="false">Academics <span aria-hidden="true">⌄</span></button>
+      <a href="#/admissions">Admissions</a>
+      <a href="#/student-outcomes">Student Outcomes</a>
+      <a href="#/alumni">Alumni</a>
+      <a href="#/campus-life">Campus Life</a>
+      <a href="#/parents">Parents</a>
+      <button class="nav-trigger" type="button" data-menu="about" aria-expanded="false">About <span aria-hidden="true">⌄</span></button>
+      <a href="#/news-media">News &amp; Media</a>
+      <a href="#/blog">Blog</a>
+      <a href="#/contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="search-button" class="icon-button" type="button" aria-label="Search site" title="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button id="theme-button" class="icon-button" type="button" aria-label="Switch theme" title="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.6 4.6l1.5 1.5m11.8 11.8 1.5 1.5m0-14.8-1.5 1.5M6.1 17.9l-1.5 1.5"/></svg></button>
+      <a class="button button-small button-dark header-apply" href="#/apply">Apply <span aria-hidden="true">↗</span></a>
+      <button id="mobile-menu-button" class="icon-button mobile-menu-button" type="button" aria-label="Open menu" aria-expanded="false"><span class="hamburger"></span></button>
+    </div>
+    <div id="nav-panel" class="nav-panel" hidden></div>
+  </header>
+  <div id="mobile-nav" class="mobile-nav" hidden></div>
+  <main id="main" tabindex="-1"></main>
+  <footer id="site-footer" class="site-footer"></footer>
+  <div id="compare-tray" class="compare-tray" hidden></div>
+  <div id="modal-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
